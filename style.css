@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #0075ff;
+  }
+  .container {
+    background-color: #ffffff;
+    width: 80vmin;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.2em 2.5em rgba(0, 21, 44, 0.18);
+  }
+  h2 {
+    font-size: 1.8em;
+    color: #0075ff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.3em;
+  }
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1.8em;
+  }
+  label {
+   
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #050121;
+   
+  }
+  input {
+    position: relative;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 0.5em;
+    border:none;
+    
+    border-bottom: 3px solid #3162ac;
+    color: #43405c;
+    outline: none;
+  }
+  /* input:focus {
+    border-color: #0075ff;
+  } */
+input:focus{
+    border-bottom: solid #15549c;
+    
+}
+/* .input-wrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-items: center;
+
+} */
+button{
+    width: 100%;
+    /* /* float: right; */
+    padding: 10px 20px; 
+    background: #213853;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    text-align: center;
+
+    position: relative;
+    font-size: 1.1em;
+    display: flex;
+    outline: none;
+    justify-content: center;
+}
+button:focus{
+    cursor: pointer;
+    opacity: 0.7;
+}
+p{
+    margin-top: 30px;
+    text-align: center;
+    color: #0065ff;
+    font-weight: 500;
+
+}
+@media screen and (max-width:400px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        flex-flow: row wrap;
+        width: 300px;
+        min-width: 300px;
+        background: #fff;
+        padding: 50px 30px;
+        display: flex;
+        flex-flow: column wrap;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        border-radius: 8px;
+        gap: 10px;
+        box-shadow: 4px 20px 25px rgba(43, 33, 33, 0.18);
+    }
+    input{
+        width:240px;
+        border:none;
+        outline:none;
+        border-bottom: 2px solid #0065ff;
+        padding: 10px 5px;
+        font-weight: 500;
+    }
+    input:focus{
+        border-bottom: 2px solid #213853;
+        
+    }
+    button{
+        width: 100%;
+        padding: 10px 20px;
+        background: #213853;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    button:focus{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
